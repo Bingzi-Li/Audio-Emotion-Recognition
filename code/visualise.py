@@ -42,7 +42,7 @@ def print_confusion_matrix(confusion_matrix, class_names, figsize=(11, 8), fonts
     except ValueError:
         raise ValueError("Confusion matrix values must be integers.")
 
-    heatmap.set_ylim(11, 0)
+    heatmap.set_ylim(12, 0)
     heatmap.yaxis.set_ticklabels(
         heatmap.yaxis.get_ticklabels(), rotation=0, ha='right', fontsize=fontsize)
     heatmap.xaxis.set_ticklabels(
